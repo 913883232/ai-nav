@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17 01:33:35",
+  "lastUpdated": "2026-03-17 02:51:00",
   "tools": [
     {
       "name": "ChatGPT",
@@ -604,13 +604,6 @@
       "tag": "free"
     },
     {
-      "name": "Google Colab",
-      "cat": "free",
-      "url": "https://colab.research.google.com",
-      "desc": "免费 GPU 云端 Jupyter 笔记本，AI 实验首选",
-      "tag": "free"
-    },
-    {
       "name": "Ollama",
       "cat": "free",
       "url": "https://ollama.com",
@@ -692,13 +685,6 @@
       "cat": "search",
       "url": "https://exa.ai",
       "desc": "语义搜索 API，专为 AI 应用设计的搜索基础设施",
-      "tag": "freemium"
-    },
-    {
-      "name": "Looka",
-      "cat": "design",
-      "url": "https://looka.com",
-      "desc": "AI Logo 与品牌设计，一键生成完整品牌识别",
       "tag": "freemium"
     }
   ]
