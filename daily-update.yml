@@ -1,0 +1,74 @@
+# GitHub Actions: 每日自动更新 AI NAV 数据
+# 触发方式: 每天 UTC 00:00 (北京时间 08:00) 自动运行 + 手动触发
+
+name: Daily AI NAV Update
+
+on:
+  schedule:
+    # 每天 UTC 00:00 运行 (北京时间 08:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # 支持手动触发
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run update script
+        env:
+          SERP_API_KEY: ${{ secrets.SERP_API_KEY }}
+        run: python update.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "AI NAV Bot"
+          git config user.email "bot@ainav.dev"
+          git add data.json pending.json 2>/dev/null || true
+          git commit -m "chore: daily data update $(date +%Y-%m-%d)"
+          git push
+
+  deploy:
+    needs: update-data
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main  # 确保拉取最新提交
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 上传整个根目录（index.html + data.json）
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

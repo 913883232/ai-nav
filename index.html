@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI NAV // 智能导航站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg-deep:#06060e;--bg-card:#0c0c18;--bg-card-hover:#10101f;
+  --neon-cyan:#00e5ff;--neon-purple:#a855f7;--neon-pink:#f43f85;
+  --neon-green:#22d3ee;--text-primary:#e2e8f0;--text-secondary:#94a3b8;
+  --text-dim:#475569;--border:#1e293b;--border-glow:rgba(0,229,255,.12);
+  --radius:6px;--card-gap:14px;
+  --font-display:'Rajdhani',sans-serif;--font-body:'Noto Sans SC',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth;font-size:15px}
+body{
+  background:var(--bg-deep);color:var(--text-primary);
+  font-family:var(--font-body);line-height:1.6;
+  min-height:100vh;overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 40% at 20% 10%,rgba(168,85,247,.06),transparent),
+    radial-gradient(ellipse 50% 50% at 80% 80%,rgba(0,229,255,.04),transparent),
+    linear-gradient(180deg,rgba(6,6,14,.95),rgba(6,6,14,1));
+}
+::selection{background:rgba(0,229,255,.25);color:#fff}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg-deep)}
+::-webkit-scrollbar-thumb{background:#1e293b;border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:#334155}
+
+/* === Layout === */
+#app{position:relative;z-index:1;max-width:1340px;margin:0 auto;padding:0 24px}
+
+/* === Header === */
+.header{
+  padding:32px 0 24px;display:flex;align-items:center;
+  justify-content:space-between;flex-wrap:wrap;gap:16px;
+  border-bottom:1px solid var(--border);
+}
+.logo{display:flex;align-items:baseline;gap:8px;user-select:none}
+.logo-mark{
+  font-family:var(--font-display);font-weight:700;font-size:1.8rem;
+  letter-spacing:2px;
+  background:linear-gradient(135deg,var(--neon-cyan),var(--neon-purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.logo-sub{
+  font-family:var(--font-mono);font-size:.7rem;color:var(--text-dim);
+  letter-spacing:1px;
+}
+.header-meta{display:flex;align-items:center;gap:16px}
+.update-badge{
+  display:flex;align-items:center;gap:6px;
+  font-family:var(--font-mono);font-size:.72rem;color:var(--neon-green);
+  background:rgba(34,211,238,.06);border:1px solid rgba(34,211,238,.15);
+  padding:4px 12px;border-radius:20px;
+}
+.update-badge .dot{
+  width:6px;height:6px;border-radius:50%;background:var(--neon-green);
+  animation:pulse-dot 2s infinite;
+}
+@keyframes pulse-dot{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.4;transform:scale(.7)}
+}
+.date-display{font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim)}
+
+/* === Search === */
+.search-wrap{
+  margin:24px 0 20px;position:relative;max-width:560px;
+}
+.search-wrap input{
+  width:100%;background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:11px 16px 11px 42px;
+  font-family:var(--font-body);font-size:.9rem;color:var(--text-primary);
+  outline:none;transition:border-color .2s,box-shadow .2s;
+}
+.search-wrap input::placeholder{color:var(--text-dim)}
+.search-wrap input:focus{
+  border-color:rgba(0,229,255,.35);
+  box-shadow:0 0 0 3px rgba(0,229,255,.08);
+}
+.search-icon{
+  position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  color:var(--text-dim);font-size:.9rem;pointer-events:none;
+}
+.search-count{
+  position:absolute;right:14px;top:50%;transform:translateY(-50%);
+  font-family:var(--font-mono);font-size:.68rem;color:var(--text-dim);
+}
+
+/* === Category Tabs === */
+.cat-bar{
+  display:flex;gap:6px;flex-wrap:wrap;margin-bottom:28px;
+  padding-bottom:20px;border-bottom:1px solid var(--border);
+}
+.cat-tab{
+  font-family:var(--font-body);font-size:.78rem;font-weight:500;
+  padding:6px 14px;border-radius:20px;cursor:pointer;
+  background:transparent;border:1px solid var(--border);
+  color:var(--text-secondary);transition:all .2s;
+  white-space:nowrap;user-select:none;
+}
+.cat-tab:hover{border-color:rgba(0,229,255,.3);color:var(--text-primary)}
+.cat-tab.active{
+  background:rgba(0,229,255,.08);border-color:rgba(0,229,255,.35);
+  color:var(--neon-cyan);
+}
+.cat-tab .tab-count{
+  font-family:var(--font-mono);font-size:.65rem;
+  margin-left:4px;opacity:.5;
+}
+
+/* === Section === */
+.section{margin-bottom:40px;animation:fadeUp .4s ease both}
+.section-head{
+  display:flex;align-items:center;gap:10px;margin-bottom:16px;
+}
+.section-icon{font-size:1rem;opacity:.7}
+.section-title{
+  font-family:var(--font-display);font-weight:600;font-size:1.15rem;
+  letter-spacing:1px;color:var(--text-primary);
+}
+.section-line{flex:1;height:1px;background:var(--border)}
+
+/* === Cards === */
+.card-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:var(--card-gap);
+}
+.card{
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:16px 18px;
+  cursor:pointer;transition:all .25s;position:relative;overflow:hidden;
+  text-decoration:none;display:block;
+}
+.card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--neon-cyan),var(--neon-purple));
+  opacity:0;transition:opacity .25s;
+}
+.card:hover{
+  border-color:rgba(0,229,255,.2);
+  background:var(--bg-card-hover);
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(0,0,0,.3),0 0 0 1px rgba(0,229,255,.08);
+}
+.card:hover::before{opacity:1}
+.card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.card-name{
+  font-family:var(--font-display);font-weight:600;font-size:1.05rem;
+  color:var(--text-primary);letter-spacing:.5px;
+}
+.card-tag{
+  font-family:var(--font-mono);font-size:.6rem;letter-spacing:.5px;
+  padding:2px 8px;border-radius:10px;text-transform:uppercase;
+}
+.tag-free{background:rgba(34,211,238,.1);color:var(--neon-green);border:1px solid rgba(34,211,238,.2)}
+.tag-freemium{background:rgba(168,85,247,.1);color:var(--neon-purple);border:1px solid rgba(168,85,247,.2)}
+.tag-paid{background:rgba(244,63,133,.08);color:var(--neon-pink);border:1px solid rgba(244,63,133,.15)}
+.card-desc{
+  font-size:.78rem;color:var(--text-secondary);
+  line-height:1.5;margin-bottom:10px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.card-url{
+  font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.card-arrow{
+  position:absolute;bottom:14px;right:16px;color:var(--text-dim);
+  font-size:.75rem;transition:all .2s;
+}
+.card:hover .card-arrow{color:var(--neon-cyan);transform:translateX(3px)}
+
+/* === Empty State === */
+.empty{
+  text-align:center;padding:60px 20px;color:var(--text-dim);
+  font-family:var(--font-mono);font-size:.85rem;
+}
+
+/* === Footer === */
+.footer{
+  text-align:center;padding:40px 0 32px;
+  border-top:1px solid var(--border);margin-top:20px;
+}
+.footer p{font-family:var(--font-mono);font-size:.68rem;color:var(--text-dim)}
+
+/* === Animations === */
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.card{animation:fadeUp .35s ease both}
+
+/* === Grid scanline effect === */
+body::after{
+  content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;
+  background:repeating-linear-gradient(
+    0deg,transparent,transparent 2px,rgba(0,0,0,.015) 2px,rgba(0,0,0,.015) 4px
+  );
+}
+
+/* === Responsive === */
+@media(max-width:768px){
+  #app{padding:0 14px}
+  .header{padding:20px 0 16px}
+  .logo-mark{font-size:1.4rem}
+  .card-grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+  .cat-bar{gap:4px}
+  .cat-tab{font-size:.72rem;padding:5px 10px}
+  .search-wrap{max-width:100%}
+}
+@media(max-width:480px){
+  .card-grid{grid-template-columns:1fr}
+  .header-meta{width:100%;justify-content:flex-end}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="header">
+    <div class="logo">
+      <span class="logo-mark">AI NAV</span>
+      <span class="logo-sub">// 智能工具导航</span>
+    </div>
+    <div class="header-meta">
+      <span class="update-badge"><span class="dot"></span> 每日更新</span>
+      <span class="date-display" id="dateDisplay"></span>
+    </div>
+  </header>
+  <div class="search-wrap">
+    <span class="search-icon">&#9906;</span>
+    <input type="text" id="searchInput" placeholder="搜索 AI 工具名称、描述..." autocomplete="off">
+    <span class="search-count" id="searchCount"></span>
+  </div>
+  <nav class="cat-bar" id="catBar"></nav>
+  <main id="mainContent"></main>
+  <footer class="footer">
+    <p>AI NAV // 数据每日自动更新 // 2024-2026</p>
+  </footer>
+</div>
+
+<script>
+const CATEGORIES = [
+  { id: 'chat', name: 'AI 聊天', icon: '&#9677;' },
+  { id: 'image', name: '文生图', icon: '&#9733;' },
+  { id: 'video', name: '文生视频', icon: '&#9654;' },
+  { id: 'coding', name: 'AI 编程', icon: '&#9000;' },
+  { id: 'search', name: 'AI 搜索', icon: '&#8981;' },
+  { id: 'writing', name: 'AI 写作', icon: '&#9998;' },
+  { id: 'audio', name: 'AI 音频', icon: '&#9835;' },
+  { id: 'design', name: 'AI 设计', icon: '&#9672;' },
+  { id: 'editing', name: '图像编辑', icon: '&#9881;' },
+  { id: 'free', name: '免费工具', icon: '&#10003;' },
+];
+
+let TOOLS = [];
+
+// Load data from external JSON
+async function loadData() {
+  try {
+    const resp = await fetch('data.json?t=' + Date.now());
+    const data = await resp.json();
+    TOOLS = data.tools || [];
+    if (data.lastUpdated) {
+      $('#dateDisplay').textContent = data.lastUpdated.split(' ')[0].replace(/-/g, '.');
+    }
+    buildCatBar();
+    render();
+  } catch (e) {
+    console.error('Failed to load data.json, using fallback', e);
+    $('#mainContent').innerHTML = '<div class="empty">// 数据加载失败，请检查 data.json</div>';
+  }
+}
+// === Rendering logic ===
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+
+// State
+let activeCat = 'all';
+let searchQuery = '';
+
+// Build category bar
+function buildCatBar() {
+  const bar = $('#catBar');
+  const allCount = TOOLS.length;
+  let html = `<button class="cat-tab active" data-cat="all">全部<span class="tab-count">${allCount}</span></button>`;
+  CATEGORIES.forEach(c => {
+    const count = TOOLS.filter(t => t.cat === c.id).length;
+    html += `<button class="cat-tab" data-cat="${c.id}">${c.name}<span class="tab-count">${count}</span></button>`;
+  });
+  bar.innerHTML = html;
+  bar.addEventListener('click', e => {
+    const tab = e.target.closest('.cat-tab');
+    if (!tab) return;
+    activeCat = tab.dataset.cat;
+    $$('.cat-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    render();
+  });
+}
+
+// Filter tools
+function getFiltered() {
+  let list = TOOLS;
+  if (activeCat !== 'all') list = list.filter(t => t.cat === activeCat);
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    list = list.filter(t =>
+      t.name.toLowerCase().includes(q) ||
+      t.desc.includes(q) ||
+      t.url.toLowerCase().includes(q)
+    );
+  }
+  return list;
+}
+
+// Render cards
+function renderCards(tools) {
+  return tools.map((t, i) => {
+    const tagLabel = t.tag === 'free' ? 'FREE' : t.tag === 'paid' ? 'PAID' : 'FREE+';
+    const tagClass = t.tag === 'free' ? 'tag-free' : t.tag === 'paid' ? 'tag-paid' : 'tag-freemium';
+    const domain = t.url.replace(/https?:\/\//, '').replace(/\/.*/, '');
+    return `<a class="card" href="${t.url}" target="_blank" rel="noopener" style="animation-delay:${Math.min(i * 0.03, 0.5)}s">
+      <div class="card-top">
+        <span class="card-name">${t.name}</span>
+        <span class="card-tag ${tagClass}">${tagLabel}</span>
+      </div>
+      <div class="card-desc">${t.desc}</div>
+      <div class="card-url">${domain}</div>
+      <span class="card-arrow">&#8599;</span>
+    </a>`;
+  }).join('');
+}
+
+// Main render
+function render() {
+  const main = $('#mainContent');
+  const filtered = getFiltered();
+
+  // Update count
+  $('#searchCount').textContent = `${filtered.length} 个工具`;
+
+  if (filtered.length === 0) {
+    main.innerHTML = '<div class="empty">// 未找到匹配的工具</div>';
+    return;
+  }
+
+  if (activeCat !== 'all' || searchQuery) {
+    // Flat grid
+    main.innerHTML = `<div class="card-grid">${renderCards(filtered)}</div>`;
+  } else {
+    // Grouped by category
+    let html = '';
+    CATEGORIES.forEach(c => {
+      const catTools = filtered.filter(t => t.cat === c.id);
+      if (catTools.length === 0) return;
+      html += `<section class="section" id="sec-${c.id}">
+        <div class="section-head">
+          <span class="section-icon">${c.icon}</span>
+          <h2 class="section-title">${c.name}</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="card-grid">${renderCards(catTools)}</div>
+      </section>`;
+    });
+    main.innerHTML = html;
+  }
+}
+
+// Search
+$('#searchInput').addEventListener('input', e => {
+  searchQuery = e.target.value.trim();
+  render();
+});
+
+// Keyboard shortcut: / to focus search
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && document.activeElement !== $('#searchInput')) {
+    e.preventDefault();
+    $('#searchInput').focus();
+  }
+  if (e.key === 'Escape') {
+    $('#searchInput').blur();
+    $('#searchInput').value = '';
+    searchQuery = '';
+    render();
+  }
+});
+
+// Init
+loadData();
+</script>
+</body>
+</html>
