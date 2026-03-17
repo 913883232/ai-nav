@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17 02:51:00",
+  "lastUpdated": "2026-03-17 10:56:58",
   "tools": [
     {
       "name": "ChatGPT",
@@ -685,6 +685,181 @@
       "cat": "search",
       "url": "https://exa.ai",
       "desc": "语义搜索 API，专为 AI 应用设计的搜索基础设施",
+      "tag": "freemium"
+    },
+    {
+      "name": "Best ChatGPT Replacement",
+      "cat": "chat",
+      "url": "https://duckduckgo.com",
+      "desc": "WithAIChat, start every project with clarity and direction toward work that's on",
+      "tag": "freemium"
+    },
+    {
+      "name": "Best LLM Leaderboard 2026",
+      "cat": "chat",
+      "url": "https://onyx.app",
+      "desc": "The definitiveLLMleaderboard — ranking thebestAImodels including Claude, GPT, Ge",
+      "tag": "freemium"
+    },
+    {
+      "name": "LLM Leaderboard 2026",
+      "cat": "chat",
+      "url": "https://llm-stats.com",
+      "desc": "ComprehensiveLLMleaderboard ranking allAImodels with performance metrics, pricin",
+      "tag": "freemium"
+    },
+    {
+      "name": "14 Best AI Chatbots in 2026: C",
+      "cat": "chat",
+      "url": "https://allaboutai.com",
+      "desc": "Discover thebestAIchatbotsin2026. Compare ChatGPT, Claude, Gemini, and more to s",
+      "tag": "freemium"
+    },
+    {
+      "name": "The Best AI Chatbots We've Tes",
+      "cat": "chat",
+      "url": "https://pcmag.com",
+      "desc": "TheBestAIChatbotsfor2026ChatGPT started theAIrevolution, but it isn't the onlych",
+      "tag": "freemium"
+    },
+    {
+      "name": "LLM Leaderboard",
+      "cat": "chat",
+      "url": "https://artificialanalysis.ai",
+      "desc": "Comparison and ranking the performance of over 100AImodels (LLMs) across key met",
+      "tag": "freemium"
+    },
+    {
+      "name": "The best AI chatbots of 2026: ",
+      "cat": "chat",
+      "url": "https://zdnet.com",
+      "desc": "I pushed eight freeAIchatbotsto their limits to find thebestAIchatbotsof2026. To",
+      "tag": "freemium"
+    },
+    {
+      "name": "Best AI Models 2026",
+      "cat": "chat",
+      "url": "https://whatllm.org",
+      "desc": "BestAIModels Complete Rankings Hub Find thebestAImodel for your use case. We ran",
+      "tag": "freemium"
+    },
+    {
+      "name": "The Best AI Chatbots in 2025",
+      "cat": "chat",
+      "url": "https://sectionai.com",
+      "desc": "Find thebestlarge language model (akaAIchatbot) for your use case with our compr",
+      "tag": "freemium"
+    },
+    {
+      "name": "基于AI大模型的智能聊天机器人实现指南",
+      "cat": "chat",
+      "url": "https://cloud.baidu.com",
+      "desc": "随着AI大模型技术的突破，智能聊天机器人已从规则驱动转向数据驱动。本文系统阐述基于AI大模型的智能聊天机器人实现路径，涵盖技术选型、模型训练、部署优化等核心环节",
+      "tag": "freemium"
+    },
+    {
+      "name": "2025年度热门AI聊天机器人评测",
+      "cat": "chat",
+      "url": "https://digest.allm.link",
+      "desc": "建议你根据自己的具体需求，选择最适合自己的AI聊天机器人。 不妨尝试不同的模型，找到最适合自己的那一个。 人工智能领域发展迅速，未来会有更多更强大的AI聊天机器",
+      "tag": "freemium"
+    },
+    {
+      "name": "大模型4sapi智能聊天机器人 技术架构核心实现与行业赋能指",
+      "cat": "chat",
+      "url": "https://cloud.tencent.com",
+      "desc": "智能聊天机器人基于NLP技术革新，依托GPT等大模型实现流畅交互，New API平台提供企业级稳定服务。文章详解核心技术原理、代码实现及多场景应用，助力企业数字",
+      "tag": "freemium"
+    },
+    {
+      "name": "2026年最佳AI聊天机器人快速指南",
+      "cat": "chat",
+      "url": "https://botpress.com",
+      "desc": "最佳综合AI聊天机器人：ChatGPT 我们精选的6款聊天机器人均可免费使用，同时也提供付费订阅服务 Gemini和Copilot分别非常适合与Google和M",
+      "tag": "freemium"
+    },
+    {
+      "name": "2025十大AI聊天机器人全球评测对比",
+      "cat": "chat",
+      "url": "https://navgood.com",
+      "desc": "十大AI聊天机器人详细评测 1. OpenAI ChatGPT-4o 整体评分：9.2/10 OpenAI 于 2025 年 1 月推出的最新模型 GPT-4o",
+      "tag": "freemium"
+    },
+    {
+      "name": "%Free AI Tools That Actually W",
+      "cat": "free",
+      "url": "https://aitoolanalysis.com",
+      "desc": "ThebestfreeAItools2026aren't bait-and-switch tactics — they're genuinely functio",
+      "tag": "freemium"
+    },
+    {
+      "name": "50 Best Free AI Tools That Act",
+      "cat": "free",
+      "url": "https://thetoolsverse.com",
+      "desc": "Find the PerfectAIToolExplore our directory of 776+AItoolsmanually verified for ",
+      "tag": "freemium"
+    },
+    {
+      "name": "Free AI Tools That Will Actual",
+      "cat": "free",
+      "url": "https://humai.blog",
+      "desc": "Discover thebestfreeAItoolsin2026that I've personally tested across chatbots, im",
+      "tag": "freemium"
+    },
+    {
+      "name": "57 Best Free AI Tools in 2026",
+      "cat": "free",
+      "url": "https://guru99.com",
+      "desc": "ThebestArtificial Intelligence Software allows you to automate tasks, perform ti",
+      "tag": "freemium"
+    },
+    {
+      "name": "Best Free AI Tools 2026: Full ",
+      "cat": "free",
+      "url": "https://velimoza.com",
+      "desc": "Discover thebestfreeAItools2026for writing, design, images, coding, research, an",
+      "tag": "freemium"
+    },
+    {
+      "name": "The 39 Best Free AI Tools in 2",
+      "cat": "free",
+      "url": "https://datacamp.com",
+      "desc": "Discover thebestfreeAItoolsof2026. Explore top-ratedfreeAIvideo generationtools,",
+      "tag": "freemium"
+    },
+    {
+      "name": "Top 30 free AI tools you can't",
+      "cat": "free",
+      "url": "https://jotform.com",
+      "desc": "Discover the topfreeAItoolsof2025designed to enhance your productivity across va",
+      "tag": "freemium"
+    },
+    {
+      "name": "10款免费ai工具推荐｜亲测好用，强烈建议收藏!",
+      "cat": "free",
+      "url": "https://sohu.com",
+      "desc": "本文推荐10款免费AI工具，涵盖设计、办公、编程三类场景，包括照片编辑工具、设计手残党救星、翻译工具、会议纪要助手、代码预言家、注释补全工具和编程辅助工具等，旨",
+      "tag": "freemium"
+    },
+    {
+      "name": "国内AI工具全解析：15款完全免费且不限次数的实用推荐",
+      "cat": "free",
+      "url": "https://developer.baidu.com",
+      "desc": "本文汇总15款国内完全免费且不限次数使用的AI工具，涵盖文本生成、图像处理、语音交互、代码开发等多领域，提供详细功能解析与使用建议，助力开发者与企业用户高效利用",
+      "tag": "freemium"
+    },
+    {
+      "name": "终极指南",
+      "cat": "free",
+      "url": "https://siliconflow.com",
+      "desc": "什么是免费开源AI工具？ 免费开源AI工具是公开可用的软件平台和模型，无需许可费用即可提供AI能力。这些工具允许开发者、研究人员和企业访问、修改和部署AI模型用",
+      "tag": "freemium"
+    },
+    {
+      "name": "除了ChatGPT，这20款AI神器同样值得你使用",
+      "cat": "free",
+      "url": "https://sspai.com",
+      "desc": "2022年是AI技术大发展的一年，特别是ChatGPT的很空出世，让AI工具迎来大爆发，今天就给大家整理出20款免费且实用的AI工具推荐，无论是做设计还是日常学",
       "tag": "freemium"
     }
   ]
