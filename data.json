@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17 10:56:58",
+  "lastUpdated": "2026-03-18 01:19:50",
   "tools": [
     {
       "name": "ChatGPT",
@@ -84,13 +84,6 @@
       "url": "https://perplexity.ai",
       "desc": "AI 搜索引擎，实时检索并生成带引用的精准回答",
       "tag": "freemium"
-    },
-    {
-      "name": "Midjourney",
-      "cat": "image",
-      "url": "https://midjourney.com",
-      "desc": "顶级 AI 绘画工具，V7 模型艺术质感极强",
-      "tag": "paid"
     },
     {
       "name": "DALL-E 4",
@@ -804,13 +797,6 @@
       "cat": "free",
       "url": "https://humai.blog",
       "desc": "Discover thebestfreeAItoolsin2026that I've personally tested across chatbots, im",
-      "tag": "freemium"
-    },
-    {
-      "name": "57 Best Free AI Tools in 2026",
-      "cat": "free",
-      "url": "https://guru99.com",
-      "desc": "ThebestArtificial Intelligence Software allows you to automate tasks, perform ti",
       "tag": "freemium"
     },
     {
