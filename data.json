@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18 01:19:50",
+  "lastUpdated": "2026-03-19 01:19:05",
   "tools": [
     {
       "name": "ChatGPT",
@@ -343,13 +343,6 @@
       "url": "https://www.tiangong.cn",
       "desc": "昆仑万维 AI 搜索，支持多轮对话与深度追问",
       "tag": "free"
-    },
-    {
-      "name": "Consensus",
-      "cat": "search",
-      "url": "https://consensus.app",
-      "desc": "学术论文 AI 搜索引擎，科研文献检索神器",
-      "tag": "freemium"
     },
     {
       "name": "Globe Explorer",
