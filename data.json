@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-19 01:19:05",
+  "lastUpdated": "2026-03-20 01:15:06",
   "tools": [
     {
       "name": "ChatGPT",
@@ -217,13 +217,6 @@
       "url": "https://pixverse.ai",
       "desc": "AI 视频生成平台，动画风格效果好",
       "tag": "freemium"
-    },
-    {
-      "name": "Wan2.5",
-      "cat": "video",
-      "url": "https://github.com/Wan-Video/Wan2.5",
-      "desc": "阿里巴巴开源视频生成模型，2026 开源最强之一",
-      "tag": "free"
     },
     {
       "name": "Vidu",
@@ -657,13 +650,6 @@
       "cat": "free",
       "url": "https://imgupscaler.com",
       "desc": "免费在线 AI 图片放大，支持批量处理",
-      "tag": "free"
-    },
-    {
-      "name": "Phind",
-      "cat": "search",
-      "url": "https://phind.com",
-      "desc": "开发者专用 AI 搜索，代码问题查找高效准确",
       "tag": "free"
     },
     {
