@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20 01:15:06",
+  "lastUpdated": "2026-03-21 01:10:34",
   "tools": [
     {
       "name": "ChatGPT",
@@ -72,24 +72,10 @@
       "tag": "freemium"
     },
     {
-      "name": "Mistral Le Chat",
-      "cat": "chat",
-      "url": "https://chat.mistral.ai",
-      "desc": "Mistral AI 对话平台，开源模型性能优异",
-      "tag": "freemium"
-    },
-    {
       "name": "Perplexity",
       "cat": "chat",
       "url": "https://perplexity.ai",
       "desc": "AI 搜索引擎，实时检索并生成带引用的精准回答",
-      "tag": "freemium"
-    },
-    {
-      "name": "DALL-E 4",
-      "cat": "image",
-      "url": "https://openai.com/dall-e-4",
-      "desc": "OpenAI 最新图像生成模型，集成 ChatGPT，画质大幅提升",
       "tag": "freemium"
     },
     {
@@ -153,13 +139,6 @@
       "cat": "image",
       "url": "https://playground.com",
       "desc": "免费在线 AI 图像生成，每日免费额度充足",
-      "tag": "freemium"
-    },
-    {
-      "name": "Tensor.Art",
-      "cat": "image",
-      "url": "https://tensor.art",
-      "desc": "在线 AI 绘画社区，模型丰富，支持 ComfyUI 工作流",
       "tag": "freemium"
     },
     {
