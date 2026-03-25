@@ -1,13 +1,6 @@
 {
-  "lastUpdated": "2026-03-24 01:13:08",
+  "lastUpdated": "2026-03-25 01:18:14",
   "tools": [
-    {
-      "name": "ChatGPT",
-      "cat": "chat",
-      "url": "https://chat.openai.com",
-      "desc": "OpenAI 旗舰对话模型，GPT-5 支持多模态推理与超长上下文",
-      "tag": "freemium"
-    },
     {
       "name": "Claude",
       "cat": "chat",
@@ -272,13 +265,6 @@
       "cat": "search",
       "url": "https://perplexity.ai",
       "desc": "AI 搜索引擎标杆，实时联网搜索并生成精准答案",
-      "tag": "freemium"
-    },
-    {
-      "name": "ChatGPT Search",
-      "cat": "search",
-      "url": "https://chat.openai.com",
-      "desc": "OpenAI 内置搜索功能，对话式实时联网信息检索",
       "tag": "freemium"
     },
     {
@@ -559,13 +545,6 @@
       "cat": "free",
       "url": "https://ollama.com",
       "desc": "本地运行大模型的开源工具，一行命令即可启动",
-      "tag": "free"
-    },
-    {
-      "name": "ChatGPT Free",
-      "cat": "free",
-      "url": "https://chat.openai.com",
-      "desc": "ChatGPT 免费版，GPT-4o-mini 无限使用",
       "tag": "free"
     },
     {
