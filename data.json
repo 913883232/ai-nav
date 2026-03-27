@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-26 01:23:40",
+  "lastUpdated": "2026-03-27 01:23:32",
   "tools": [
     {
       "name": "Claude",
@@ -55,13 +55,6 @@
       "cat": "chat",
       "url": "https://xinghuo.xfyun.cn",
       "desc": "科大讯飞认知大模型，语音交互与中文处理能力强",
-      "tag": "freemium"
-    },
-    {
-      "name": "Grok",
-      "cat": "chat",
-      "url": "https://grok.x.ai",
-      "desc": "xAI 开发的 AI 助手，实时联网且风格幽默直率",
       "tag": "freemium"
     },
     {
@@ -126,13 +119,6 @@
       "url": "https://playground.com",
       "desc": "免费在线 AI 图像生成，每日免费额度充足",
       "tag": "freemium"
-    },
-    {
-      "name": "Sora 2",
-      "cat": "video",
-      "url": "https://sora.com",
-      "desc": "OpenAI 第二代视频生成模型，故事板与长视频创作能力强",
-      "tag": "paid"
     },
     {
       "name": "Veo 3",
