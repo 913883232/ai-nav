@@ -1,13 +1,6 @@
 {
-  "lastUpdated": "2026-03-27 01:23:32",
+  "lastUpdated": "2026-03-28 01:17:07",
   "tools": [
-    {
-      "name": "Claude",
-      "cat": "chat",
-      "url": "https://claude.ai",
-      "desc": "Anthropic 推出的智能助手，擅长长文分析、编程与深度推理",
-      "tag": "freemium"
-    },
     {
       "name": "Gemini",
       "cat": "chat",
