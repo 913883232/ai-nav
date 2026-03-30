@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-29 01:27:01",
+  "lastUpdated": "2026-03-30 01:27:26",
   "tools": [
     {
       "name": "Gemini",
@@ -391,13 +391,6 @@
       "cat": "audio",
       "url": "https://speechify.com",
       "desc": "AI 文本转语音工具，支持多语言自然朗读",
-      "tag": "freemium"
-    },
-    {
-      "name": "Canva AI",
-      "cat": "design",
-      "url": "https://canva.com",
-      "desc": "全球最大在线设计平台，AI 功能覆盖图文视频",
       "tag": "freemium"
     },
     {
