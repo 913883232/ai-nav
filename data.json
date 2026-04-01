@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-31 01:24:50",
+  "lastUpdated": "2026-04-01 01:44:58",
   "tools": [
     {
       "name": "Gemini",
@@ -321,13 +321,6 @@
       "cat": "writing",
       "url": "https://xiezuocat.com",
       "desc": "AI 写作与校对平台，中文语法检查出色",
-      "tag": "freemium"
-    },
-    {
-      "name": "Grammarly",
-      "cat": "writing",
-      "url": "https://grammarly.com",
-      "desc": "AI 英文写作助手，语法检查与风格优化",
       "tag": "freemium"
     },
     {
