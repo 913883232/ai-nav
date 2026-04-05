@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-04 01:18:08",
+  "lastUpdated": "2026-04-05 01:27:46",
   "tools": [
     {
       "name": "Gemini",
@@ -77,13 +77,6 @@
       "url": "https://blackforestlabs.ai",
       "desc": "Black Forest Labs 推出的高质量开源文生图模型",
       "tag": "free"
-    },
-    {
-      "name": "Ideogram",
-      "cat": "image",
-      "url": "https://ideogram.ai",
-      "desc": "擅长文字渲染的 AI 绘图工具，设计感强",
-      "tag": "freemium"
     },
     {
       "name": "Adobe Firefly",
@@ -531,13 +524,6 @@
       "cat": "free",
       "url": "https://remove.bg",
       "desc": "免费 AI 背景移除，每月有免费额度",
-      "tag": "free"
-    },
-    {
-      "name": "Gamma",
-      "cat": "free",
-      "url": "https://gamma.app",
-      "desc": "AI 一键生成 PPT 演示文稿，免费使用",
       "tag": "free"
     },
     {
