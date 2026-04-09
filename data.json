@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-08 01:26:07",
+  "lastUpdated": "2026-04-09 01:17:29",
   "tools": [
     {
       "name": "Gemini",
@@ -538,13 +538,6 @@
       "cat": "free",
       "url": "https://v0.dev",
       "desc": "免费 AI 前端组件生成，对话式 UI 开发",
-      "tag": "free"
-    },
-    {
-      "name": "ImgUpscaler",
-      "cat": "free",
-      "url": "https://imgupscaler.com",
-      "desc": "免费在线 AI 图片放大，支持批量处理",
       "tag": "free"
     },
     {
