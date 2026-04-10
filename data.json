@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-09 01:17:29",
+  "lastUpdated": "2026-04-10 01:27:19",
   "tools": [
     {
       "name": "Gemini",
@@ -55,13 +55,6 @@
       "cat": "chat",
       "url": "https://perplexity.ai",
       "desc": "AI 搜索引擎，实时检索并生成带引用的精准回答",
-      "tag": "freemium"
-    },
-    {
-      "name": "Nano Banana Pro",
-      "cat": "image",
-      "url": "https://nanobananapro.com",
-      "desc": "2025 新锐文生图模型，精确主体提取与文字层处理",
       "tag": "freemium"
     },
     {
