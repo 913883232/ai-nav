@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12 01:44:27",
+  "lastUpdated": "2026-04-13 01:48:57",
   "tools": [
     {
       "name": "Gemini",
@@ -7,13 +7,6 @@
       "url": "https://gemini.google.com",
       "desc": "Google DeepMind 多模态 AI，深度集成 Google 生态系统",
       "tag": "freemium"
-    },
-    {
-      "name": "DeepSeek",
-      "cat": "chat",
-      "url": "https://chat.deepseek.com",
-      "desc": "国产开源大模型，推理能力出色，DeepSeek-R1 表现亮眼",
-      "tag": "free"
     },
     {
       "name": "Kimi",
@@ -489,13 +482,6 @@
       "cat": "free",
       "url": "https://ollama.com",
       "desc": "本地运行大模型的开源工具，一行命令即可启动",
-      "tag": "free"
-    },
-    {
-      "name": "DeepSeek",
-      "cat": "free",
-      "url": "https://chat.deepseek.com",
-      "desc": "完全免费的国产大模型，推理能力媲美顶级模型",
       "tag": "free"
     },
     {
