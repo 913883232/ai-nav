@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-02 01:53:10",
+  "lastUpdated": "2026-05-03 01:56:13",
   "tools": [
     {
       "name": "Gemini",
@@ -41,13 +41,6 @@
       "cat": "chat",
       "url": "https://xinghuo.xfyun.cn",
       "desc": "科大讯飞认知大模型，语音交互与中文处理能力强",
-      "tag": "freemium"
-    },
-    {
-      "name": "Perplexity",
-      "cat": "chat",
-      "url": "https://perplexity.ai",
-      "desc": "AI 搜索引擎，实时检索并生成带引用的精准回答",
       "tag": "freemium"
     },
     {
@@ -217,13 +210,6 @@
       "url": "https://trae.ai",
       "desc": "字节跳动推出的免费 AI IDE，集成多模型支持",
       "tag": "free"
-    },
-    {
-      "name": "Perplexity AI",
-      "cat": "search",
-      "url": "https://perplexity.ai",
-      "desc": "AI 搜索引擎标杆，实时联网搜索并生成精准答案",
-      "tag": "freemium"
     },
     {
       "name": "Google AI Overviews",
@@ -462,13 +448,6 @@
       "url": "https://cleanup.pictures",
       "desc": "AI 去除图片中的多余物体与瑕疵",
       "tag": "freemium"
-    },
-    {
-      "name": "Magnific AI",
-      "cat": "editing",
-      "url": "https://magnific.ai",
-      "desc": "AI 图像放大与增强，细节重建效果惊艳",
-      "tag": "paid"
     },
     {
       "name": "HuggingFace",
