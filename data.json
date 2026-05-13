@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12 02:05:14",
+  "lastUpdated": "2026-05-13 02:11:03",
   "tools": [
     {
       "name": "Gemini",
@@ -524,13 +524,6 @@
       "cat": "chat",
       "url": "https://llm-stats.com",
       "desc": "ComprehensiveLLMleaderboard ranking allAImodels with performance metrics, pricin",
-      "tag": "freemium"
-    },
-    {
-      "name": "14 Best AI Chatbots in 2026: C",
-      "cat": "chat",
-      "url": "https://allaboutai.com",
-      "desc": "Discover thebestAIchatbotsin2026. Compare ChatGPT, Claude, Gemini, and more to s",
       "tag": "freemium"
     },
     {
