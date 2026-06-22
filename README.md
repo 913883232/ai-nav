@@ -222,3 +222,5 @@ crontab -e
 3. **新工具审核**: 爬虫发现的新工具不会自动上线，需要执行 `python update.py approve` 人工审核
 4. **数据安全**: data.json 是唯一数据源，建议定期备份
 5. **自定义域名**: 在 GitHub Pages 设置中绑定自定义域名
+
+https://vsllm.com
