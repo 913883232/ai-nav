@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02 01:51:03",
+  "lastUpdated": "2026-08-03 01:53:39",
   "tools": [
     {
       "name": "Gemini",
@@ -69,13 +69,6 @@
       "cat": "image",
       "url": "https://tongyi.aliyun.com/wanxiang",
       "desc": "阿里巴巴 AI 绘画平台，支持中文提示词",
-      "tag": "freemium"
-    },
-    {
-      "name": "文心一格",
-      "cat": "image",
-      "url": "https://yige.baidu.com",
-      "desc": "百度 AI 作画工具，中文理解准确",
       "tag": "freemium"
     },
     {
