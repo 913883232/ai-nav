@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03 01:53:39",
+  "lastUpdated": "2026-08-04 01:28:37",
   "tools": [
     {
       "name": "Gemini",
@@ -182,13 +182,6 @@
       "url": "https://lovable.dev",
       "desc": "AI 应用构建工具，自然语言转全栈项目",
       "tag": "freemium"
-    },
-    {
-      "name": "Claude Code",
-      "cat": "coding",
-      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview",
-      "desc": "Anthropic 终端 AI 编程代理，自主完成复杂编码任务",
-      "tag": "paid"
     },
     {
       "name": "Devin",
