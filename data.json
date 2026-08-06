@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05 01:42:14",
+  "lastUpdated": "2026-08-06 01:42:03",
   "tools": [
     {
       "name": "Gemini",
@@ -20,13 +20,6 @@
       "cat": "chat",
       "url": "https://tongyi.aliyun.com",
       "desc": "阿里巴巴 Qwen3 系列，中文理解能力全球领先",
-      "tag": "freemium"
-    },
-    {
-      "name": "文心一言",
-      "cat": "chat",
-      "url": "https://yiyan.baidu.com",
-      "desc": "百度通用大模型，已升级为文心品牌，中文生态完善",
       "tag": "freemium"
     },
     {
