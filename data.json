@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10 00:59:28",
+  "lastUpdated": "2026-08-11 00:58:49",
   "tools": [
     {
       "name": "Gemini",
@@ -167,13 +167,6 @@
       "cat": "coding",
       "url": "https://replit.com",
       "desc": "AI 驱动的全栈开发平台，自然语言构建完整应用",
-      "tag": "freemium"
-    },
-    {
-      "name": "Lovable",
-      "cat": "coding",
-      "url": "https://lovable.dev",
-      "desc": "AI 应用构建工具，自然语言转全栈项目",
       "tag": "freemium"
     },
     {
