@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-15 00:39:29",
+  "lastUpdated": "2026-08-16 00:41:56",
   "tools": [
     {
       "name": "Gemini",
@@ -168,13 +168,6 @@
       "url": "https://replit.com",
       "desc": "AI 驱动的全栈开发平台，自然语言构建完整应用",
       "tag": "freemium"
-    },
-    {
-      "name": "Devin",
-      "cat": "coding",
-      "url": "https://devin.ai",
-      "desc": "全球首个 AI 软件工程师，自主完成开发任务",
-      "tag": "paid"
     },
     {
       "name": "Trae",
