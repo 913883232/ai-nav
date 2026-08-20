@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-19 00:39:37",
+  "lastUpdated": "2026-08-20 00:39:35",
   "tools": [
     {
       "name": "Gemini",
@@ -139,13 +139,6 @@
       "cat": "coding",
       "url": "https://cursor.com",
       "desc": "AI 原生代码编辑器，支持全代码库智能理解与编辑",
-      "tag": "freemium"
-    },
-    {
-      "name": "Windsurf",
-      "cat": "coding",
-      "url": "https://windsurf.com",
-      "desc": "Codeium 推出的 AI 编辑器，智能代码补全与重构",
       "tag": "freemium"
     },
     {
