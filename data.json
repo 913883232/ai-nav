@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-16 02:23:14",
+  "lastUpdated": "2026-09-17 02:27:29",
   "tools": [
     {
       "name": "Gemini",
@@ -482,13 +482,6 @@
       "cat": "chat",
       "url": "https://llm-stats.com",
       "desc": "ComprehensiveLLMleaderboard ranking allAImodels with performance metrics, pricin",
-      "tag": "freemium"
-    },
-    {
-      "name": "The Best AI Chatbots We've Tes",
-      "cat": "chat",
-      "url": "https://pcmag.com",
-      "desc": "TheBestAIChatbotsfor2026ChatGPT started theAIrevolution, but it isn't the onlych",
       "tag": "freemium"
     },
     {
