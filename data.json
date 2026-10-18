@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17 02:09:05",
+  "lastUpdated": "2026-10-18 02:08:55",
   "tools": [
     {
       "name": "Gemini",
@@ -195,13 +195,6 @@
       "cat": "search",
       "url": "https://www.tiangong.cn",
       "desc": "昆仑万维 AI 搜索，支持多轮对话与深度追问",
-      "tag": "free"
-    },
-    {
-      "name": "Globe Explorer",
-      "cat": "search",
-      "url": "https://explorer.globe.engineer",
-      "desc": "AI 知识图谱搜索，可视化探索任意主题",
       "tag": "free"
     },
     {
