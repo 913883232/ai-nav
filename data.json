@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27 02:55:38",
+  "lastUpdated": "2026-10-28 03:04:24",
   "tools": [
     {
       "name": "Gemini",
@@ -175,13 +175,6 @@
       "url": "https://google.com",
       "desc": "Google 搜索 AI 摘要功能，搜索结果 AI 总结",
       "tag": "free"
-    },
-    {
-      "name": "You.com",
-      "cat": "search",
-      "url": "https://you.com",
-      "desc": "AI 驱动的隐私搜索引擎，支持多模式搜索",
-      "tag": "freemium"
     },
     {
       "name": "秘塔 AI 搜索",
