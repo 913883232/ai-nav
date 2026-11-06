@@ -553,6 +553,13 @@
       "url": "https://sspai.com",
       "desc": "2022年是AI技术大发展的一年，特别是ChatGPT的很空出世，让AI工具迎来大爆发，今天就给大家整理出20款免费且实用的AI工具推荐，无论是做设计还是日常学",
       "tag": "freemium"
+    },
+    {
+      "name": "agent-qa",
+      "cat": "coding",
+      "url": "https://vostride.com",
+      "desc": "自然语言应用测试，持久记忆与验证后自我改进；本地免费，模型费另计",
+      "tag": "free"
     }
   ]
 }
